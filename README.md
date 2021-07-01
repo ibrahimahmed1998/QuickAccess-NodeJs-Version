@@ -1,3 +1,4 @@
 # QuickAccess
-this is simple html , css code help you to access your websites quickly 
+this is simple code help you to access your websites quickly without writting or think in site name  
 this is not compelete work , it depend on your links put in it .  
+project under developing .
