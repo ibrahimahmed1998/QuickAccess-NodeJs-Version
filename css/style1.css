@@ -1,19 +1,15 @@
-body
-{
+body{
     background-image:url("../IMG/background.jpg");
     height:200%;  		
     background-repeat:no-repeat;	
-    background-size: cover;
-}
+    background-size: cover; }
+
 img{
     border-style:outset;	 
     width: 65px; 
     height: 65px; 
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s;	
-    transition: width 2s, height 2s, transform 2s;
-	}
+    transition: width 2s, height 2s, transform 1s; 	}
 
-img:hover  {width: 200px;	   height: 200px;   	-webkit-transform: rotate(360deg); /* Safari */ transform: rotate(360deg);    }  
-
-div.inline { float:left; }
-div.inline {margin-left: 320px;}
+img:hover{width: 200px;  height: 200px;  -webkit-transform: rotate(360deg); /* Safari */ transform: rotate(360deg);    }  
+div.inline{  margin-left: 25%; margin-top: 10%;  }
