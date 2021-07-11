@@ -29,3 +29,10 @@ const L = []; for (let i=0;i<links.length;i++){
     L[i].setAttribute('href',links[i]+".html");
     L[i].innerHTML=links[i];
     document.getElementById("li"+i).appendChild(L[i]);}
+/*******************************/            
+const linker = document.createElement("link");
+linker.setAttribute("rel","icon");
+linker.setAttribute("type","image/x-icon");
+linker.setAttribute("href","../IMG/icon1.jpg");
+document.getElementById("head").appendChild(linker);
+/*******************************/
