@@ -20,12 +20,12 @@ const li = []; for (let i=0;i<9;i++){
     li[i].setAttribute('class','nav-item');
     li[i].setAttribute('id','li'+i);
     document.getElementById("ul1").appendChild(li[i]);}
-
-const links = ['Front-End','JS','PHP','dot_net','jobs-Training','Marketing','Others','Python','Testing'] ; 
-            
-const L = []; for (let i=0;i<9;i++){
+/*******************************/
+const links = ['Front-End','JS','PL2','jobs-Training','Marketing','Others'] ; 
+/*******************************/            
+const L = []; for (let i=0;i<links.length;i++){
     L[i] = document.createElement('a');
     L[i].setAttribute('class','nav-link');
     L[i].setAttribute('href',links[i]+".html");
     L[i].innerHTML=links[i];
-    document.getElementById("li"+i).appendChild(L[i]);} 
+    document.getElementById("li"+i).appendChild(L[i]);}

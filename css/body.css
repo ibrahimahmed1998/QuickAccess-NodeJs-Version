@@ -1,20 +1,12 @@
-body{
-    background-image:url("../IMG/background.jpg");
-    height:200%;  		
-    background-repeat:no-repeat;	
-    background-size: cover; }
-
-img{
-    border-style:outset;	 
-    width: 65px; 
-    height: 65px; 
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;	
-    transition: width 2s, height 2s, transform 1s; 
-    margin-bottom:5px ; 
-	}
-
+body{  background-image:url("../IMG/background.jpg");
+       height:200%;       background-repeat:no-repeat;        background-size: cover;}	  	
+   	
+img{ border-style:outset;    width: 65px;     height: 65px; 	 
+     -webkit-transition: width 2s, height 2s, -webkit-transform 2s;	
+     transition: width 2s, height 2s, transform 1s; 
+     margin-bottom:5px; }
+	
 img:hover{  width: 200px;  height: 200px;  -webkit-transform: rotate(360deg); /* Safari */ transform: rotate(360deg);    }  
 div.inline{   margin-left: 25%; margin-top: 10%; margin-bottom:0% ;}
-div.buttom{   margin-left: 25%; margin-top: 35%; margin-bottom:0% ;}
-
 div.div2{   margin-left: 25%; margin-top: 10%; margin-bottom:0% ;}
+div.buttom{   margin-left: 25%; margin-top: 20%; margin-bottom:0% ;}
