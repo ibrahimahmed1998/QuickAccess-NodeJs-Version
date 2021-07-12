@@ -1,3 +1,5 @@
+const links = ['Front-End','JS','PL2','jobs-Training','Marketing','Others'] ; 
+/*******************************/
 const anc = document.createElement("a");
 anc.setAttribute("class","navbar-brand");
 anc.setAttribute("href","index.html");
@@ -20,9 +22,7 @@ const li = []; for (let i=0;i<9;i++){
     li[i].setAttribute('class','nav-item');
     li[i].setAttribute('id','li'+i);
     document.getElementById("ul1").appendChild(li[i]);}
-/*******************************/
-const links = ['Front-End','JS','PL2','jobs-Training','Marketing','Others'] ; 
-/*******************************/            
+/*******************************/         
 const L = []; for (let i=0;i<links.length;i++){
     L[i] = document.createElement('a');
     L[i].setAttribute('class','nav-link');
