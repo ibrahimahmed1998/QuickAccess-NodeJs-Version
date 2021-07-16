@@ -9,4 +9,4 @@ img{ border-style:none;   width: 65px;     height: 65px;
 img:hover{  width: 120px;  height: 120px;  -webkit-transform: rotate(360deg); /* Safari */ transform: rotate(360deg);    }  
 div.inline{   margin-left: 22%; margin-top: 10%; margin-bottom:0% ; }
 div.div2{   margin-left: 22%; margin-top: 10%; margin-bottom:0% ;  }
-div.buttom{   margin-left: 22%; margin-top: 32%; margin-bottom:0% ;  }
+div.buttom{   margin-left: 22%; margin-top: 26%; margin-bottom:0% ;  }
