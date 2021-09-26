@@ -1,4 +1,4 @@
-const links = ['0_0','JS','Py','PHP','Security','Programming','UI','Jobs','Others'] ; 
+const links = ['0_0','JS','Py','PHP','Security','Programming','UI','Jobs','Others','Egy'] ; 
 /*******************************/
 const anc = document.createElement("a");
 anc.setAttribute("class","navbar-brand");
@@ -17,7 +17,7 @@ ul.setAttribute('class','navbar-nav ms-auto');
 ul.setAttribute('id','ul1');
 const element4 = document.getElementById("navbarResponsive").appendChild(ul);
 /*******************************/
-const li = []; for (let i=0;i<9;i++){
+const li = []; for (let i=0;i<10;i++){
     li[i] = document.createElement('li');
     li[i].setAttribute('class','nav-item');
     li[i].setAttribute('id','li'+i);
