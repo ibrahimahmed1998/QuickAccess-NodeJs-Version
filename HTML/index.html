@@ -2,19 +2,28 @@
 <link rel="stylesheet" type="text/css" href="../css/nav.css"  />
 <link rel="stylesheet" type="text/css" href="../css/body.css"/>
 <script src="../js/nav.js" defer > </script>
-<!-- <script src="https://unpkg.com/htmlincludejs"></script> -->
-</head><body id="test"> 
-<!-- <include src="nav.html"></include> -->
+
+<script type="text/javascript" language="javascript">
+    function RunFile() {
+    WshShell = new ActiveXObject("WScript.Shell");
+    WshShell.Run("c:/windows/system32/notepad.exe", 1, false);
+    }
+
+</script>
+
+</head>
+<body id="test"> 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div id="div1" class="container px-4">
         <div id="div9"></div>
 </nav>
 
-<!-- <script> function f1(){window.open('iexplore.exe'); }  </script> -->
-<!-- <a href="#" onclick="f1()">           <img src="../IMG/redis.png"title="redis"></a> -->
-
+  
 <div class="all"><div class="inline">
 <a href="ms-calculator://">           <img src="../IMG/calc.png"title="calculator"></a>
+ 
+
 <a href="https://redis.io/">           <img src="../IMG/redis.png"title="redis"></a>
 <a href="https://www.rabbitmq.com/">   <img src="../IMG/rabbitmq.png"   title="rabbitmq"></a>
 <a href="https://www.elastic.co/">     <img src="../IMG/Elastic.png"    title="elastic"></a>
@@ -26,8 +35,6 @@
 <a href="https://www.jenkins.io/"> <img src="../IMG/Jenkins.png"   title="jenkins.io"></a>
 <br>
 <a href="https://stackshare.io/">       <img src="../IMG/stackshare.png"title="stackshare"></a>
-<a href="https://www.w3schools.com/">    <img src="../IMG/W3Schools.png"    title="w3schools"></a>
-<a href="https://hackr.io/"> <img src="../IMG/hacker.io.png"   title="hackr.io"></a>
 <a href="https://jsoneditoronline.org/"> <img src="../IMG/json-editor.png"   title="jsoneditoronline"></a>
 <a href="https://www.coursera.org"> <img src="../IMG/corsera.png"   title="coursera"></a>
 <a href="https://www.udacity.com/">        <img src="../IMG/udacity-logo-png-transparent.png"    title="udacity"></a>
