@@ -1,5 +1,14 @@
-body{  background-image:url("../IMG/bkground.jpg");
-       height:200%;       background-repeat:no-repeat;        background-size: cover;}	  	
+
+body,
+html {
+	height: 90%;
+	margin: 0;
+	padding: 0;
+     background: #005AA7;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+}
    	
 img{ border-style:none;   width: 65px;     height: 65px; 	 
      -webkit-transition: width 2s, height 2s, -webkit-transform 2s;	

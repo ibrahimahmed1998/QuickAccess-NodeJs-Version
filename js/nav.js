@@ -1,12 +1,14 @@
 const links = ['0_0','English','DataAnalysis','HR','JS','Py','PHP','Security','Programming','UI','Jobs','Others','Eg','Money'] ; 
- 
 /*******************************/
 const anc = document.createElement("a");
 anc.setAttribute("class","navbar-brand");
 anc.setAttribute("href","index.html");
-const div1 = document.getElementById("div1").appendChild(anc);
+const div9 = document.getElementById("div9").appendChild(anc);
+const div1 = document.getElementById("div1");
 /*******************************/
-const b = document.createElement("b");b.innerHTML="Quick Access";div1.appendChild(b);
+const b = document.createElement("b");
+b.innerHTML="Quick Access"; 
+div9.appendChild(b);
 /*******************************/
 const div2 = document.createElement("div");
 div2.setAttribute("class","collapse navbar-collapse");
