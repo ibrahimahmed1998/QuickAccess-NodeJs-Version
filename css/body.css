@@ -1,13 +1,10 @@
 
-body,
-html {
+body,html{
 	height: 90%;
 	margin: 0;
-	padding: 0;
      background: #005AA7;  /* fallback for old browsers */
      background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          
+     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
 }
    	
 img{ border-style:none;   width: 65px;     height: 65px; 	 
@@ -17,10 +14,10 @@ img{ border-style:none;   width: 65px;     height: 65px;
 
      border-radius: 10px;
 }
-	
 img:hover{  width: 120px;  height: 120px;  -webkit-transform: rotate(360deg); /* Safari */ transform: rotate(360deg);    }  
 
 div.inline{   margin-left: 22%; margin-top: 6%; margin-bottom:0% ; }
 div.div2{   margin-left: 22%; margin-top: 2%; margin-bottom:0% ;  }
-div.buttom{   margin-left: 15%; margin-top: 32%; margin-bottom:0% ;  }
 
+.up{   margin-top: 3%;  margin-bottom:0% ;  }
+.down{   margin-top: 30%;  margin-bottom:0% ;  }
