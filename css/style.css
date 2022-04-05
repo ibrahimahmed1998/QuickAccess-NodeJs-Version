@@ -1,0 +1,26 @@
+img {
+    border-style: none;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 0.1s;
+    margin-bottom: 2%;
+    margin-right: 1.5%;
+    border-radius: 10px;
+}
+
+.cards {
+    padding-left: 1%;
+    padding-top: 1%;
+    margin: 1%;
+    display: inline-block;
+}
+
+.cards img {
+    width: 253px;
+    height: 106px;
+}
+
+.cards:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.2s;
+}
+ 
