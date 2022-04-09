@@ -4,7 +4,12 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.navbar {
+  /* position: fixed; */
+  top: 0;
+}
  
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -391,6 +396,9 @@ dl {
 .accordion-body {
   padding: 1rem 1.25rem;
 }
+
+
+
 
 .accordion-flush .accordion-collapse {
   border-width: 0;

@@ -24,3 +24,9 @@ img {
     transition-duration: 0.2s;
 }
  
+
+.star{
+    color:  black;
+    font-weight:bolder;
+    text-decoration: none;
+}
