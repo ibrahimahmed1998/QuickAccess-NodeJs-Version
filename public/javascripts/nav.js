@@ -2,7 +2,7 @@ const links = ['0_0','English','Data','Marketing','SAP','Software Testing','HR',
 /*******************************/
 const anc = document.createElement("a");
 anc.setAttribute("class","navbar-brand");
-anc.setAttribute("href","index.html");
+anc.setAttribute("href","/");
 const div9 = document.getElementById("div9").appendChild(anc);
 const div1 = document.getElementById("div1");
 /*******************************/

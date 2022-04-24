@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head id="head"><title>Home</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/nav.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/body.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/in_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/nav.js" defer> </script>
+    <script src="javascripts/index.js"> </script>
+    <script src="javascripts/clear.js"> </script>
+
+</head><body id="body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div id="div1" class="container px-4">
+            <div id="div9"></div>
+    </nav>
+
+<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Add </a></h4>
+<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Update </a></h4>
+<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Delete </a></h4>
+
+    <script>
+        var myVar = <%- JSON.stringify(arr) %>;
+        console.log(myVar);
+        get(myVar);
+    </script>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <br><br><h2>
+                link &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="link" id="link"><br> <br>
+                img &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="img" id="img"><br><br>
+                title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="title" id="title"><br><br>
+                <button id="sendy" onclick="send()">Add</button>
+                <button style="color: red;" onclick='clr()'>clear</button>
+            </h2>
+        </div>
+    </div>
+
+     <script>
+        var send = function () {
+            var link = document.getElementById('link').value;
+            var img = document.getElementById('img').value;
+            var title = document.getElementById('title').value;
+            clr();
+
+            $.ajax({
+                url: "/",
+                type: 'POST',
+                data: { link: link, img: img, title: title, id: 100 },
+
+                success: function (response) {
+                    
+                    console.log(response);
+                     
+                },
+                error: (err) => {
+                    var x = JSON.stringify(err);
+                    console.log(x);
+                    alert(x);
+                }
+            })
+        }
+    </script>
+
+<script>
+    var input = document.getElementById("title");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("sendy").click();
+      }
+    });
+    </script>
+
+    <center class="down">
+        <a href="https://www.youtube.com/feed/subscriptions"><img src="images/youbtube.png" title="Youtube"></a>
+        <a href="https://www.linkedin.com/in/ibrahimahmed1998/"><img src="images/in.png" title="linkedin"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="images/gmail.png" title="gmail"></a>
+        <a href="https://web.whatsapp.com/"><img src="images/whatsapp.png" title="whatsapp"></a>
+        <a href="https://github.com/ibrahimahmed1998"> <img src="images/github.png" title="github"></a>
+
+        <a href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1"> <img
+                src="images/7.png" title="7"></a>
+        <a href="https://onedrive.live.com/?id=root&cid=29FA4FAFDD71D387"> <img src="images/onedrive-min.png"
+                title="Data Sets "></a>
+        <a href="https://drive.google.com/drive/my-drive"><img src="images/drive.png" title="Drive"></a>
+    </center>
+</body></html>
+<!-- ===============================================================
+    <a href="https://calendar.google.com/calendar/u/0/r?tab=rc">        <img src="images/calender.png"    title="calender"></a>
+    <a href="https://stackexchange.com/sites/"> <img src="images/Stack_Exchange.png"   title="stackexchange"></a>
+    <a href="https://www.mindgames.com/"> <img src="images/dc4007ec8e5d310a4006202a976b5074.png"    title="mindgames"></a>
+=============================================================== -->
