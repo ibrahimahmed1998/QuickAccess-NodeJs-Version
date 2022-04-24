@@ -38,4 +38,3 @@ linker.setAttribute("rel","icon");
 linker.setAttribute("type","image/x-icon");
 linker.setAttribute("href","../IMG/icon1.jpg");
 document.getElementById("head").appendChild(linker);
-/*******************************/

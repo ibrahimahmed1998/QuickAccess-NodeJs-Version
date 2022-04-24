@@ -33,12 +33,12 @@ const db = new sqlite3.Database('./db.db', sqlite3.OPEN_READWRITE, (err => {
 
     app.post('/', (req, res) => {
  
-         db.run("INSERT INTO indexs(link,img_path,title) VALUES(?,?,?)",req.body.link,req.body.img,req.body.title,
+         db.run("INSERT INTO indexs(link,img_path,title,html,updown) VALUES(?,?,?,?,?)",req.body.link,req.body.img,req.body.title,req.body.html,req.body.updwon,
          (err) => {
             if(err) {
                 return console.log(err.message); 
             }
-            console.log(req.body.title+ '  was added Sucessfully');
+            console.log(req.body.title+ ' was added Sucessfully');
         })
     });
 

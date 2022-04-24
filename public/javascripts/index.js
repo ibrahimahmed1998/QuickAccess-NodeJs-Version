@@ -1,4 +1,4 @@
-function get(arr) { // body>>center>>a[img-title]>>br
+function get(arr) { // body>>center>>a[img-title]>>br      wait to add updown html
 
     var body = document.getElementById("body");
     var center = document.createElement("center");

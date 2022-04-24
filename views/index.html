@@ -7,6 +7,7 @@
     <script src="javascripts/nav.js" defer> </script>
     <script src="javascripts/index.js"> </script>
     <script src="javascripts/clear.js"> </script>
+    <script src="javascripts/send_2_back.js"> </script>
 
 </head><body id="body">
 
@@ -32,37 +33,21 @@
                 link &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="link" id="link"><br> <br>
                 img &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="img" id="img"><br><br>
                 title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="title" id="title"><br><br>
+                html &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="html" id="html"><br><br>
+
+                <!-- <ul>
+
+                    dropdown list
+                </ul> -->
+                updown &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="integer" name="updown" id="updown"><br><br>
+
                 <button id="sendy" onclick="send()">Add</button>
                 <button style="color: red;" onclick='clr()'>clear</button>
             </h2>
         </div>
     </div>
 
-     <script>
-        var send = function () {
-            var link = document.getElementById('link').value;
-            var img = document.getElementById('img').value;
-            var title = document.getElementById('title').value;
-            clr();
-
-            $.ajax({
-                url: "/",
-                type: 'POST',
-                data: { link: link, img: img, title: title, id: 100 },
-
-                success: function (response) {
-                    
-                    console.log(response);
-                     
-                },
-                error: (err) => {
-                    var x = JSON.stringify(err);
-                    console.log(x);
-                    alert(x);
-                }
-            })
-        }
-    </script>
+     <script>send()</script>
 
 <script>
     var input = document.getElementById("title");
@@ -74,6 +59,11 @@
     });
     </script>
 
+<a href="https://hadoop.apache.org/">  <img src="../IMG/hadoop.png"title="hadoop"></a>
+<a href="https://powerbi.microsoft.com/en-au/desktop/">  <img src="../IMG/PowerBI.png"title="powerbi"></a>
+<a href="https://www.r-project.org/">  <img src="../IMG/R.png"title="R Lang"></a>
+<a href="https://www.generatedata.com/">        <img src="../IMG/generate data.png"    title="generatedata"></a>
+
     <center class="down">
         <a href="https://www.youtube.com/feed/subscriptions"><img src="images/youbtube.png" title="Youtube"></a>
         <a href="https://www.linkedin.com/in/ibrahimahmed1998/"><img src="images/in.png" title="linkedin"></a>
@@ -83,13 +73,10 @@
 
         <a href="https://www.youm7.com/Section/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%A7%D8%AC%D9%84%D8%A9/65/1"> <img
                 src="images/7.png" title="7"></a>
-        <a href="https://onedrive.live.com/?id=root&cid=29FA4FAFDD71D387"> <img src="images/onedrive-min.png"
-                title="Data Sets "></a>
         <a href="https://drive.google.com/drive/my-drive"><img src="images/drive.png" title="Drive"></a>
+        <a href="https://calendar.google.com/calendar/u/0/r?tab=rc">        <img src="images/calender.png"    title="calender"></a>
+
     </center>
 </body></html>
 <!-- ===============================================================
-    <a href="https://calendar.google.com/calendar/u/0/r?tab=rc">        <img src="images/calender.png"    title="calender"></a>
-    <a href="https://stackexchange.com/sites/"> <img src="images/Stack_Exchange.png"   title="stackexchange"></a>
-    <a href="https://www.mindgames.com/"> <img src="images/dc4007ec8e5d310a4006202a976b5074.png"    title="mindgames"></a>
 =============================================================== -->
