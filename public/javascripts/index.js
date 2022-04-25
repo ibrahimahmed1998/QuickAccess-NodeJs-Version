@@ -39,20 +39,13 @@ function get(arr,choice,counter){      // body>>center>>a[img-title]>>br      wa
 
         if(arr[i].updown == 1 && choice == arr[i].html) { center1.appendChild(link); }
         else if (arr[i].updown == 0 && choice == arr[i].html) {  center2.appendChild(link);  }
-
-        
-        
+  
                 if( i%9 == 0 && i!=0    ) 
                 { 
                         var br = document.createElement("br");
                         center1.appendChild(br);
                         // center2.appendChild(br);
                 }
-           
-           
-       
-
-
     }
     body.appendChild(center1);
     body.appendChild(center2);
