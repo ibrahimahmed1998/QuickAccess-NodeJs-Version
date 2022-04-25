@@ -6,6 +6,7 @@ function clr(){
     document.getElementById('title').value="";
     document.getElementById('html').value="";
     document.getElementById('updown').value="";
+    document.getElementById('pass').value="";
 
 
 }

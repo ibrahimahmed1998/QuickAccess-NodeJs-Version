@@ -8,28 +8,21 @@
     <script src="javascripts/index.js"> </script>
     <script src="javascripts/clear.js"> </script>
     <script src="javascripts/send_2_back.js"> </script>
-
 </head><body id="body">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div id="div1" class="container px-4">
             <div id="div9"></div>
+            <a style="right: 10%; color: white; margin-left: 1%;" href="#popup1"> Add </a>
+            <a style="right: 10%; color: white; margin-left: 1%;" href="#popup1"> Update </a>
+            <a style="right: 10%; color: white; margin-left: 1%;" href="#popup1"> Delete </a>
     </nav>
 
-<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Add </a></h4>
-<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Update </a></h4>
-<h4><a style="right: 10%; color: black; margin-left: 1%;" href="#popup1"> Delete </a></h4>
-
-    <script>
-        var myVar = <%- JSON.stringify(arr) %>;
-        console.log(myVar);
-        get(myVar);
-    </script>
+    <script> var myVar = <%- JSON.stringify(arr) %>;        get(myVar); </script>
 
     <div id="popup1" class="overlay">
         <div class="popup">
             <a class="close" href="#">&times;</a>
-            <br><br><h2>
+            <h2>
                 link &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="link" id="link"><br> <br>
                 img &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="img" id="img"><br><br>
                 title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="title" id="title"><br><br>
@@ -40,14 +33,13 @@
                     dropdown list
                 </ul> -->
                 updown &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="integer" name="updown" id="updown"><br><br>
+                Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="pass" id="pass"><br><br>
 
                 <button id="sendy" onclick="send()">Add</button>
                 <button style="color: red;" onclick='clr()'>clear</button>
             </h2>
         </div>
     </div>
-
-     <script>send()</script>
 
 <script>
     var input = document.getElementById("title");
@@ -58,11 +50,6 @@
       }
     });
     </script>
-
-<a href="https://hadoop.apache.org/">  <img src="../IMG/hadoop.png"title="hadoop"></a>
-<a href="https://powerbi.microsoft.com/en-au/desktop/">  <img src="../IMG/PowerBI.png"title="powerbi"></a>
-<a href="https://www.r-project.org/">  <img src="../IMG/R.png"title="R Lang"></a>
-<a href="https://www.generatedata.com/">        <img src="../IMG/generate data.png"    title="generatedata"></a>
 
     <center class="down">
         <a href="https://www.youtube.com/feed/subscriptions"><img src="images/youbtube.png" title="Youtube"></a>
