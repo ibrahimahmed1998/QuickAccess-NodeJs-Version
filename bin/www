@@ -16,10 +16,10 @@ var app     = express();
 
 // var port = normalizePort(process.env.PORT || '3000');
 
-console.log("test");console.log("test");console.log("test");
+ 
 // app.set('port', port);
 
-console.log("test");
+ 
 /**
  * Create HTTP server.
  */
