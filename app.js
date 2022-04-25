@@ -9,4 +9,4 @@ app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.urlencoded({ extended: true }));
 const router = require('./routes/router');
 app.use('/', router);
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Listening on port : ${port}`));
