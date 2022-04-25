@@ -16,8 +16,6 @@
 
 <body id="body">
 
- 
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div id="div1" class="container px-4">
             <div id="div9"></div>
@@ -35,11 +33,28 @@
 
         window.onclick=e=>{
 
-            x = e.target.innerText
-            
+            x = e.target.innerText;
+             
+
+            switch (x) {
+                case '0_0': x = '0_0'; y=1; break;
+                case 'English': x =  'English';y=1; break;
+                case 'Marketing':  x = 'Marketing'; y=1;break; 
+                case 'JS':  x = 'JS';y=1; break; 
+                case 'Py': x = 'Py'; y=1;break;
+                case 'PHP': x = 'PHP';y=1; break;
+                case 'Security':    x = 'Security';y=1; break;
+                case 'Prog':    x = 'Prog';y=1; break;
+                case 'UI-UX':   x = 'UI-UX'; y=1;break;
+                case 'JOB':     x = 'JOB'; y=1;break;
+                case 'Others':  x = 'Others';y=1; break;
+                case 'Eg':  x = 'Eg';y=1; break;
+                case 'Finance':     x = 'Finance';y=1; break;
+                // default:    x = 'Quick Acess'; y=0; break; 
+            }
             console.log("Choice = "+ x);
 
-            get(myVar,x,1); 
+            get(myVar,x,y); 
  
          }
     </script>

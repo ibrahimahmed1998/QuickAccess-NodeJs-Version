@@ -5,23 +5,15 @@ function renew()
 
     delete_center1.remove();
     delete_center2.remove();
-
     console.log("delete center");
+
 }
 
 function get(arr,choice,counter){      // body>>center>>a[img-title]>>br      wait to add updown html
 
-   
-    console.log(counter);
+    console.log("counter = " + counter);
 
-    if(counter != 0)
-    {
-        console.log("delete center");
-
-        renew(); 
-    }
-
-    counter = counter + 1;
+    if(counter != 0) { renew();   }
 
     var body = document.getElementById("body");
     var center1 = document.createElement("center");
@@ -33,8 +25,9 @@ function get(arr,choice,counter){      // body>>center>>a[img-title]>>br      wa
     center2.setAttribute("class", "down");
     center2.setAttribute("id", "center2");
 
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = 0; i < arr.length ; i++ ) {
 
+          
         var link = document.createElement("a");
         link.setAttribute("href", arr[i].link);
         // link.setAttribute("id", arr[i].id);
@@ -46,15 +39,21 @@ function get(arr,choice,counter){      // body>>center>>a[img-title]>>br      wa
 
         if(arr[i].updown == 1 && choice == arr[i].html) { center1.appendChild(link); }
         else if (arr[i].updown == 0 && choice == arr[i].html) {  center2.appendChild(link);  }
- 
-        if(i == 9 || i == 18 || i == 27 || i == 36) 
-        {
-            var br = document.createElement("br");
-            center1.appendChild(br);
-            // center2.appendChild(br);
-        }
+
+        
+        
+                if( i%9 == 0 && i!=0    ) 
+                { 
+                        var br = document.createElement("br");
+                        center1.appendChild(br);
+                        // center2.appendChild(br);
+                }
+           
+           
+       
+
+
     }
     body.appendChild(center1);
     body.appendChild(center2);
-
 }
