@@ -3,6 +3,7 @@ const links = ['0_0','English','Marketing','JS','Py','PHP','Security','Prog','UI
 const anc = document.createElement("a");
 anc.setAttribute("class","navbar-brand");
 anc.setAttribute("href","/");
+ 
 const div9 = document.getElementById("div9").appendChild(anc);
 const div1 = document.getElementById("div1");
 /*******************************/
@@ -29,7 +30,7 @@ const li = []; for (let i=0;i<links.length;i++){
 const L = []; for (let i=0;i<links.length;i++){
     L[i] = document.createElement('a');
     L[i].setAttribute('class','nav-link');
-    L[i].setAttribute('href',links[i]+".html");
+    L[i].setAttribute('href',"#");
     L[i].innerHTML=links[i];
     document.getElementById("li"+i).appendChild(L[i]);}
 /*******************************/            

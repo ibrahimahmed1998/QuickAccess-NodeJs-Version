@@ -1,8 +1,38 @@
-function get(arr) { // body>>center>>a[img-title]>>br      wait to add updown html
+function renew()
+{
+    var delete_center1 = document.getElementById("center1");
+    var delete_center2 = document.getElementById("center2");
+
+    delete_center1.remove();
+    delete_center2.remove();
+
+    console.log("delete center");
+}
+
+function get(arr,choice,counter){      // body>>center>>a[img-title]>>br      wait to add updown html
+
+   
+    console.log(counter);
+
+    if(counter != 0)
+    {
+        console.log("delete center");
+
+        renew(); 
+    }
+
+    counter = counter + 1;
 
     var body = document.getElementById("body");
-    var center = document.createElement("center");
-    center.setAttribute("class", "up");
+    var center1 = document.createElement("center");
+    var center2 = document.createElement("center");
+
+    center1.setAttribute("class", "up");
+    center1.setAttribute("id", "center1");
+
+    center2.setAttribute("class", "down");
+    center2.setAttribute("id", "center2");
+
     for (var i = 0; i < arr.length; i++) {
 
         var link = document.createElement("a");
@@ -14,13 +44,17 @@ function get(arr) { // body>>center>>a[img-title]>>br      wait to add updown ht
         img.setAttribute("title", arr[i].title);
         link.appendChild(img);
 
-        center.appendChild(link);
-        if (i == 9 || i == 18 || i == 27 || i == 36) {
+        if(arr[i].updown == 1 && choice == arr[i].html) { center1.appendChild(link); }
+        else if (arr[i].updown == 0 && choice == arr[i].html) {  center2.appendChild(link);  }
+ 
+        if(i == 9 || i == 18 || i == 27 || i == 36) 
+        {
             var br = document.createElement("br");
-            center.appendChild(br);
+            center1.appendChild(br);
+            // center2.appendChild(br);
         }
-
     }
-    body.appendChild(center);
-}
+    body.appendChild(center1);
+    body.appendChild(center2);
 
+}
